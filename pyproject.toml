@@ -1,6 +1,5 @@
 [project]
 name = "python-boilerplate"
-version = "0.9.0"
 description = "A template for quickly starting new projects in python"
 authors = [
     { name = "Yurii | monok8i 🦋", email = "didkivskiyyura725@gmail.com" },
@@ -11,6 +10,7 @@ requires-python = ">=3.12,<4.0"
 dependencies = ["environs (>=14.2.0,<15.0.0)"]
 
 [tool.poetry]
+version = "0.0.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.11.13"
@@ -90,7 +90,7 @@ ignore_missing_imports = true # Ignore missing imports for third-party libraries
 name = "cz_conventional_commits"
 tag_format = "$version"
 version_scheme = "semver2"
-version_provider = "uv"
+version_provider = "poetry"
 update_changelog_on_bump = true
 
 # ================================= PYTEST
